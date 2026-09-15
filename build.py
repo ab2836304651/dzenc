@@ -29,6 +29,8 @@ def main():
         "--windowed",          # 不弹黑色控制台窗口
         "--noconfirm", "--clean",
         "--name", APP_NAME,
+        "--icon", os.path.join(HERE, "dzenc.ico"),   # 必须绝对路径：
+        # --specpath 会把 --icon 的相对路径解析到 spec 目录而非当前目录
         "--distpath", "dist",
         "--workpath", "build",
         "--specpath", "build",

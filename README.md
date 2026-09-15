@@ -1,3 +1,5 @@
+<img src="icon_256.png" width="96" alt="dzenc 图标">
+
 # dzenc
 
 **简单、可靠、能直接给不懂技术的人用的文件加密工具。**
