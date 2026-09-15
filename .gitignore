@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 打包中间产物（重新运行 build.py 即可生成）
+build/
+dist/
+*.spec
+
+# 加密产物与测试残留，避免误提交
+*.enc
+*.part
+dzenc_cli.log
+
+# 本地验收截图（含本机路径，不入库）
+验收截图/
