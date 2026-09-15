@@ -40,7 +40,7 @@ zip / 7z 的"加密压缩包"有三个常见毛病：
 
 ### 图形界面
 
-从 [Releases](../../releases) 下载 `文件加密工具.exe`，双击运行。
+从 [Releases](../../releases) 下载 `dzenc.exe`，双击运行。
 
 1. 把文件拖进窗口，或点击窗口选择文件
 2. 输入口令（加密时需输两遍）
@@ -61,8 +61,11 @@ python dzenc.py decrypt 报告.docx.enc -p 我的口令 -o 还原.docx
 不带参数就是图形界面。打包后的 exe 同样支持这套参数：
 
 ```bash
-文件加密工具.exe encrypt 报告.docx -p 我的口令
+dzenc.exe encrypt 报告.docx -p 我的口令
 ```
+
+> 自行打包时产物名是 `文件加密工具.exe`（`build.py` 里的 `APP_NAME`）；
+> Release 里为了方便跨平台下载改用了英文名，两者是同一个程序。
 
 > `-p` 后面直接写口令会留在命令历史里。敏感场景请省略 `-p`，
 > 程序会交互式询问。
